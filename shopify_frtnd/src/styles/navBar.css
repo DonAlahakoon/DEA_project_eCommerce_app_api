@@ -1,0 +1,25 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.shopify-header-left-section {
+  font-family: "Playwrite HR Lijeva", sans-serif;
+}
+
+.shopify-header-left-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.shopify-header-middle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
