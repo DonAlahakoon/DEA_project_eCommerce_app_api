@@ -1,3 +1,8 @@
+/**
+ * Owner: Demesh Fernando
+ * Last updated Date: 24 July 2024
+ * This uses to as the main container around the header nav bar.
+ */
 .navbar-container {
   width: 100%;
   display: flex;
@@ -8,18 +13,142 @@
   padding-right: 20px;
 }
 
+/**
+ * Owner: Demesh Fernando
+ * Last updated Date: 24 July 2024
+ * This represents the left section of the header, which is a logo of the web page.
+ */
 .shopify-header-left-section {
   font-family: "Playwrite HR Lijeva", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hamburger-icon{
+  width: 30px;
+}
+
+.hamburger-icon:hover{
+  cursor: pointer;
 }
 
 .shopify-header-left-section a {
   text-decoration: none;
   color: white;
+  margin-left: 15px;
 }
 
+/**
+ * Owner: Demesh Fernando
+ * Last updated Date: 24 July 2024
+ * These are the styles related with the middle section of the header nav bar. 
+ * A search box and a button to search the entered items related with the web page.
+ */
 .shopify-header-middle-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 500px;
+  border: 2px solid transparent;;
 }
+
+.shopify-header-middle-section:focus-within{
+  border-color: #ff9900;
+  border-radius: 5px;
+}
+
+.search-bar{
+  width: 416px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0;
+  padding-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.search-button{
+  width: 80px;
+  height: 40px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+  background-color: #f3a847;
+}
+
+.search-button:hover{
+  cursor: pointer;
+}
+
+.search-button .search-icon{
+  width: 25px;
+}
+
+.shopify-header-middle-section input:focus {
+  outline: none;
+}
+
+/**
+ * Owner: Demesh Fernando
+ * Last updated Date: 24 July 2024
+ * This is the right section of the nav bar. consists with the some values and other related operations.
+ */
+.shopify-header-right-section{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .orders-link, .account-name {
+    color: white;
+  }
+  
+  .returns-text, .hello-text {
+    display: block;
+    font-size: 13px;
+  }
+  
+  .orders-text, .account-holder-name {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+  
+  .cart-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  .cart-icon {
+    width: 50px;
+  }
+  
+  .cart-text {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .cart-quantity {
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+  
+    position: absolute;
+    top: 2px;
+    left: 16px;
+    
+    width: 26px;
+    text-align: center;
+  }
