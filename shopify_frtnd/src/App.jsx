@@ -1,9 +1,12 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
 import Card from "./components/card.jsx";
-import NavBar from "./components/navbar.jsx";
-import Items from "./repo/cardRepo.jsx";
+import SideBar from "./components/sideBar.jsx";
+
+import { faAngleRight } from "./configs/config.jsx";
+library.add(faAngleRight);
 
 function App() {
-  return <NavBar />;
+  return <SideBar />;
 }
 
 export default App;
