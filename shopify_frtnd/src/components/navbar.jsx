@@ -3,6 +3,7 @@ import { CART_ICON, SEARCH_ICON, HAMBURGER_ICON } from "../configs/config.jsx";
 /**
  * Nav bar component which uses to get the top navigation bar of the page.
  * Owner: Demesh Fernando
+ * Created Date: 24 July 2024
  * Last updated Date: 24 July 2024
  * @component
  * @param {object} props
