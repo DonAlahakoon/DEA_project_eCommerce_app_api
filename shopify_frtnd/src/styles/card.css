@@ -1,3 +1,11 @@
+/**
+ * card.css
+ * use to style the card components and some of their basic sub stylings.
+ * Owner: Demesh Fernando
+ * Created Date: 27 July 2024
+ * Last updated Date: 27 July 2024
+ */
+
 .card {
   width: 300px;
   border: 2px solid black;

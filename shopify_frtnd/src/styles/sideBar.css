@@ -1,9 +1,27 @@
+/**
+ * sideBar.css
+ * use to have the stylings to the side bar.
+ * Owner: Demesh Fernando
+ * Created Date: 27 July 2024
+ * Last updated Date: 27 July 2024
+ */
+
 .shopify-side-main-bar {
   background-color: white;
   width: 500px;
 }
 
+.back-holder-sub-section {
+  display: flex;
+}
+
 .main-section {
+  width: 500px;
+  overflow-y: auto;
+}
+
+.sub-drop-down-items {
+  width: 500px;
   overflow-y: auto;
 }
 
@@ -39,6 +57,7 @@
 }
 
 .item-container {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,4 +100,26 @@
 .country-flag {
   width: 25px;
   margin-right: 10px;
+}
+
+.header-with-back-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #cdd3d3;
+  height: 50px;
+}
+
+.header-sub-drop-down {
+  color: #232f3e;
+}
+
+.angle-left-icon {
+  padding-left: 50px;
+  margin-right: 10px;
+}
+
+.header-with-back-icon:hover {
+  color: #232f3e;
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 /**
  * Body Component uses to generate a body of descriptions.
  * Owner: Demesh Fernando
+ * Created Date: 22 July 2024
  * Last Updated Date: 22 July 2024
  * @component
  * @param {string} props

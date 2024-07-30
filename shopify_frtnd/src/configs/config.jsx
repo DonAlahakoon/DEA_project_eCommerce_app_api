@@ -1,8 +1,18 @@
+/**
+ * config.jsx file,
+ * which uses to do the basic initializations in the react project.
+ * Owner: Demesh Fernando
+ * Created Date: 27 July 2024
+ * Last updated Date: 27 July 2024
+ * @returns Every single import will returned
+ */
+
 //fontawesome initialization
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 //import images
 import CART_ICON from "../assets/icons/cart-icon.png";
@@ -15,7 +25,27 @@ import _1 from "../assets/products/1.png";
 import STAR_FILLED from "../assets/ratings/star-regular.svg";
 import STAR_EMPTY from "../assets/ratings/star-solid.svg";
 
+//components importing
+import Card from "../components/card.jsx";
+import NavBar from "../components/navbar.jsx";
+import SideBar from "../components/sideBar.jsx";
+//sub category
+import Body from "../components/sub/body.jsx";
+import Header from "../components/sub/header.jsx";
+import Img from "../components/sub/img.jsx";
+import {
+  SideBarSubMainSection,
+  SingleItemBuildUp,
+} from "../components/sub/side-bar-sub-main.jsx";
+import Stars from "../components/sub/star.jsx";
+
+//Repo importing
+import accountDetailsRepo from "../repo/accountDetailsRepo.jsx";
+import cardRepo from "../repo/cardRepo.jsx";
+import sideBarItemRepo from "../repo/sideBarItemRepo";
+
 export {
+  //icon export
   FontAwesomeIcon,
   faAngleRight,
   CART_ICON,
@@ -23,8 +53,25 @@ export {
   HAMBURGER_ICON,
   faX,
   faGlobe,
+  faAngleLeft,
   USER_ICON,
+  //image export
   _1,
   STAR_FILLED,
   STAR_EMPTY,
+  //components export
+  Card,
+  NavBar,
+  SideBar,
+  //sub category Components
+  Body,
+  Header,
+  Img,
+  SideBarSubMainSection,
+  SingleItemBuildUp,
+  Stars,
+  //repo exporting
+  accountDetailsRepo,
+  cardRepo,
+  sideBarItemRepo,
 };

@@ -3,6 +3,7 @@ import { STAR_FILLED, STAR_EMPTY } from "../../configs/config.jsx";
 /**
  * Stars component which uses to symbolize ratings with stars upto 5
  * Owner: Demesh Fernando
+ * Created Date: 22 July 2024
  * Last Updated Date: 22 July 2024
  * @component
  * @param {string} props star count

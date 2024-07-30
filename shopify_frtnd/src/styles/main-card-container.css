@@ -1,3 +1,10 @@
+/**
+ * card.css
+ * use to have the container styling of the card component.
+ * Owner: Demesh Fernando
+ * Created Date: 27 July 2024
+ * Last updated Date: 27 July 2024
+ */
 .main-card-container {
   display: flex;
   flex-wrap: wrap;

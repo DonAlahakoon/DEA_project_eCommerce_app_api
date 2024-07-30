@@ -1,6 +1,7 @@
 /**
  * Img component which uses to get image tag
  * Owner: Demesh Fernando
+ * Created Date: 22 July 2024
  * Last Updated Date: 22 July 2024
  * @component
  * @param {string} props

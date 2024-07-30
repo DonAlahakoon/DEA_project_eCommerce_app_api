@@ -1,13 +1,14 @@
-import { useState } from "react";
-
-import HeaderComponent from "./sub/header.jsx";
-import BodyComponent from "./sub/body.jsx";
-import StarController from "./sub/star.jsx";
-import ImageController from "./sub/img.jsx";
+import {
+  Header as HeaderComponent,
+  Body as BodyComponent,
+  Stars as StarController,
+  Img as ImageController,
+} from "../configs/config.jsx";
 
 /**
  * Card Component which uses to create a basic card
  * Owner: Demesh Fernando
+ * Created Date: 22 July 2024
  * Last updated Date: 22 July 2024
  * @component
  * @param {object} props
