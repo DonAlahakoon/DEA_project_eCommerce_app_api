@@ -3,7 +3,7 @@ import {
   Body as BodyComponent,
   Stars as StarController,
   Img as ImageController,
-} from "../configs/config.jsx";
+} from "../../configs/config.jsx";
 
 /**
  * Card Component which uses to create a basic card

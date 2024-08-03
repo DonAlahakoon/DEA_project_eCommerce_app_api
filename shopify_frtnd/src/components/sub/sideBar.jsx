@@ -5,14 +5,10 @@ import {
   USER_ICON,
   faAngleLeft,
   FontAwesomeIcon,
-} from "../configs/config.jsx";
-
-import {
   SideBarSubMainSection,
   SingleItemBuildUp,
-} from "./sub/side-bar-sub-main.jsx";
-
-import accountDetailsRepo from "../repo/accountDetailsRepo.jsx";
+  accountDetailsRepo,
+} from "../../configs/config.jsx";
 
 /**
  * Side bar component which uses to pop out the side bar when clicked the hamburger icon in nav bar.

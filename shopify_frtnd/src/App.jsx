@@ -1,12 +1,9 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import Card from "./components/card.jsx";
-import SideBar from "./components/sideBar.jsx";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
-import { faAngleRight } from "./configs/config.jsx";
-library.add(faAngleRight);
+import { CreateAccount } from "./configs/config";
 
 function App() {
-  return <SideBar />;
+  return <CreateAccount />;
 }
 
 export default App;

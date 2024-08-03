@@ -13,6 +13,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 //import images
 import CART_ICON from "../assets/icons/cart-icon.png";
@@ -26,13 +27,15 @@ import STAR_FILLED from "../assets/ratings/star-regular.svg";
 import STAR_EMPTY from "../assets/ratings/star-solid.svg";
 
 //components importing
-import Card from "../components/card.jsx";
-import NavBar from "../components/navbar.jsx";
-import SideBar from "../components/sideBar.jsx";
+import CreateAccount from "../components/accountCreation.jsx";
+
 //sub category
 import Body from "../components/sub/body.jsx";
 import Header from "../components/sub/header.jsx";
 import Img from "../components/sub/img.jsx";
+import Card from "../components/sub/card.jsx";
+import { NavBar, AccountCreationNavBar } from "../components/sub/navbar.jsx";
+import SideBar from "../components/sub/sideBar.jsx";
 import {
   SideBarSubMainSection,
   SingleItemBuildUp,
@@ -55,15 +58,18 @@ export {
   faGlobe,
   faAngleLeft,
   USER_ICON,
+  faCaretRight,
   //image export
   _1,
   STAR_FILLED,
   STAR_EMPTY,
   //components export
+  CreateAccount,
+  //sub category Components
   Card,
   NavBar,
+  AccountCreationNavBar,
   SideBar,
-  //sub category Components
   Body,
   Header,
   Img,
