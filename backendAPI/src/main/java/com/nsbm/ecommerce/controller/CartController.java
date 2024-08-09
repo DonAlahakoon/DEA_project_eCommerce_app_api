@@ -17,5 +17,14 @@ public class CartController {
         return cartService.addProductToCart(userId, productId, quantity);
     }
 
+    @GetMapping("/get")
+    public Cart getCart(@RequestParam int userId) {
+        return cartService.getCartByUserId(userId);
+    }
+
+    @PutMapping("/update")
+    public Cart updateProductQuantity(@RequestParam int userId, @RequestParam int productId, @RequestParam int quantity) {
+        return cartService.updateProductQuantity(userId, productId, quantity);
+    }
 
 }

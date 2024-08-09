@@ -45,5 +45,36 @@ public class CartService {
         return cartRepository.save(cart);
     }
 
+    public Cart getCartByUserId(int userId) {
+        Cart cart = cartRepository.findByUserId(userId);
+        if (cart == null) {
+            throw new RuntimeException("Cart not found for user ID: " + userId);
+        }
+        return cart;
+    }
+
+    public Cart updateProductQuantity(int userId, int productId, int quantity) {
+        Cart cart = cartRepository.findByUserId(userId);
+        if (cart == null) {
+            throw new RuntimeException("Cart not found for user ID: " + userId);
+        }
+
+        CartItem cartItem = cart.getItems().stream()
+                .filter(item -> item.getProduct().getId() == productId)
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Product not found in cart"));
+
+        if (quantity == 0) {
+            cart.getItems().remove(cartItem);
+            cartItemRepository.delete(cartItem);
+        } else {
+            cartItem.setQuantity(quantity);
+            cart.setTotalPrice(cart.getTotalPrice() + (quantity - cartItem.getQuantity()) * cartItem.getProduct().getPrice());
+            cartItemRepository.save(cartItem);
+        }
+
+        return cartRepository.save(cart);
+    }
+
 
 }
