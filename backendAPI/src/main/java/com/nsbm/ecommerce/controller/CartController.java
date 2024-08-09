@@ -27,4 +27,9 @@ public class CartController {
         return cartService.updateProductQuantity(userId, productId, quantity);
     }
 
+    @DeleteMapping("/remove")
+    public Cart removeProductFromCart(@RequestParam int userId, @RequestParam int productId) {
+        return cartService.removeProductFromCart(userId, productId);
+    }
+
 }
