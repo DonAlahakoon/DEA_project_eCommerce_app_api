@@ -1,7 +1,5 @@
-package in.asam.controller;
-
-import java.util.List;
-
+package com.nsbm.ecommerce.controller;
+import com.nsbm.ecommerce.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,13 +11,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import in.asam.entity.Category;
-import in.asam.services.CategoryService;
+import com.nsbm.ecommerce.entity.Category;
+import com.nsbm.ecommerce.services.CategoryService;
+import java.util.List;
+
 
 @RestController
 @RequestMapping(value = "/api/categories")
 public class CategoryController {
-	@Autowired(required =true)
+    @Autowired(required =true)
     private CategoryService categoryService;
 
     @GetMapping
@@ -28,7 +28,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Category> getCategoryById(@PathVariable Long id) {
+    public ResponseEntity<Object> getCategoryById(@PathVariable Long id) {
         Category category = categoryService.getCategoryById(id);
         if (category != null) {
             return ResponseEntity.ok(category);
@@ -57,5 +57,4 @@ public class CategoryController {
         categoryService.deleteCategory(id);
         return ResponseEntity.noContent().build();
     }
-
 }

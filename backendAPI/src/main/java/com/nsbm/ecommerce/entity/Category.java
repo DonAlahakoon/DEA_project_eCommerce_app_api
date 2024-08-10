@@ -1,4 +1,4 @@
-package in.asam.entity;
+package com.nsbm.ecommerce.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

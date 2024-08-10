@@ -1,19 +1,19 @@
-package in.asam.services;
+package com.nsbm.ecommerce.services.impl;
+
+import com.nsbm.ecommerce.entity.Category;
+import com.nsbm.ecommerce.repository.CategoryRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.nsbm.ecommerce.services.CategoryService;
 
-import in.asam.entity.Category;
-import in.asam.repository.CategoryRepository;
+
 @Service
-
 public class ServiceImpl implements CategoryService {
-
-	
-	@Autowired
+    @Autowired
     private CategoryRepository categoryRepository;
 
     @Override
@@ -51,4 +51,6 @@ public class ServiceImpl implements CategoryService {
         categoryRepository.deleteById(id);
 
     }
+
+
 }
