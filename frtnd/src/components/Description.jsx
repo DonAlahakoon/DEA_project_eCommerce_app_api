@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * This is the description component
+ */
 function Description() {
   return (
     <div className='container-fluid'>
