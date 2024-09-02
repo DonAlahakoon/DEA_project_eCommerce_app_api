@@ -1,0 +1,84 @@
+.shopify-side-main-bar {
+  background-color: white;
+  width: 500px;
+}
+
+.main-section {
+  overflow-y: auto;
+}
+
+.main-account-details {
+  background-color: #232f3e;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.account-name-and-logo {
+  display: flex;
+  align-items: center;
+}
+
+.user-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.x-icon {
+  width: 15px;
+}
+
+.header {
+  padding-left: 50px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #cdd3d3;
+}
+
+.items {
+  color: #232f3e;
+}
+
+.item-container:hover,
+.account-details-item-container:hover {
+  background-color: #eaeded;
+  cursor: pointer;
+  font-weight: 500;
+  color: #232f3e;
+}
+
+.greater-than-icon {
+  width: 15px;
+}
+
+.account-details-item-container {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+
+.globe-icon {
+  margin-right: 10px;
+}
+
+.country-flag {
+  width: 25px;
+  margin-right: 10px;
+}
