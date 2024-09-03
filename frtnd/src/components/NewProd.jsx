@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Col, Row, Form, Button,  } from 'react-bootstrap';
 
+/**
+ * This is the New Product component
+ */
+
 export default function NewProd() {
   const [productImages, setProductImages] = useState([]);
 
