@@ -1,6 +1,10 @@
 import React from 'react'
 import { Col, Row, Form, Button,  } from 'react-bootstrap';
 
+/**
+ * This is the Product Tracker component
+ */
+
 function ProdTracker() {
   return (
     <div>
