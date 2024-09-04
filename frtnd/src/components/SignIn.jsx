@@ -1,6 +1,10 @@
 import React from 'react'
 import { Col, Row, Form, Button,  } from 'react-bootstrap';
 
+/**
+ * This is the Sign In component
+ */
+
 export default function SignIn() {
   return (
     <div className="container">
