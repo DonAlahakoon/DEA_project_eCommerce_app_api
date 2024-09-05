@@ -4,7 +4,7 @@ import com.nsbm.ecommerce.dto.obj.UserDto;
 import com.nsbm.ecommerce.entity.User;
 
 public class UserMapper {
-    public static UserDto mapToUser(User user){
+    public static UserDto mapToUserDto(User user){
         return new UserDto(
                 user.getId(),
                 user.getName(),

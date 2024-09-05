@@ -12,7 +12,7 @@ public interface UserService {
 
     List<UserDto> getAllUsers();
 
-    UserDto updateProduct(int userId,UserDto user);
+    UserDto updateUser(int userId,UserDto user);
 
     void deleteUser(int id);
 
