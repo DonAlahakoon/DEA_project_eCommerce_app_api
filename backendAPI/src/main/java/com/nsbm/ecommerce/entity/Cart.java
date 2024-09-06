@@ -31,6 +31,7 @@ public class Cart {
 
     private double totalPrice;
 
+    
     @CreationTimestamp
     private LocalDateTime createdAt;
 
